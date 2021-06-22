@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Başlıksız Belge</title>
+</head>
+
+<body>
+<script language="javascript">
+	function buyuk(say1, say2)
+	{
+		if(eval(say1.value)>eval(say2.value))
+	document.form1.kutu3.value=eval(say1.value);
+	else
+	document.form1.kutu3.value=eval(say2.value);
+	}
+	
+</script>
+
+	<form name="form1" >
+	  <table width="400" border="0">
+        <tr>
+          <td>Birinci Sayı:</td>
+          <td><input type="text" name="kutu1" /></td>
+        </tr>
+        <tr>
+          <td>İkinci Sayı:</td>
+          <td><input type="text" name="kutu2" /></td>
+        </tr>
+        <tr>
+          <td>Büyük Sayı:</td>
+          <td><input type="text" name="kutu3" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+<input type="Button" value="Gönder" onclick="buyuk(document.form1.kutu1,document.form1.kutu2)" />
+</td>
+        </tr>
+      </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<h1>
+
+<script type ="text/javascript">
+
+var girilensayi;
+
+var enb;
+
+var enk;
+
+var i;
+
+girilensayi=prompt("1.sayýyý giriniz:");
+enk=girilensayi;
+enb=girilensayi;
+
+for(i=2;i<=10;i++)
+{
+	girilensayi=prompt(i+".sayýyý giriniz:");
+	
+	if(girilensayi>enb)
+		enb=girilensayi;
+	if(girilensayi<enk)
+		enk=girilensayi;
+	
+
+}
+document.write("girdiðiniz sayýlar içinde en büyük sayý:"+enb);
+document.write("<br>");
+document.write("girdiðiniz sayýlar içinde en küçük sayý:"+enk);
+
+</script>
+</h1>

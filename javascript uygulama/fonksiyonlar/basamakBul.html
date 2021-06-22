@@ -1,0 +1,29 @@
+<script>
+function basamakBul(sayi)
+{
+	var bolunen=2;
+	var bolen=1;
+	var basamak=0;
+
+	while(bolunen>1)
+	{
+		bolunen=sayi/bolen;
+
+		bolen=bolen*10;
+		
+		if (bolunen>=1)
+		{
+			basamak++;
+		}
+	}
+
+	return basamak;
+}
+
+var girilenSayi=prompt("Sayi giriniz:");
+
+var sayiBasamak=basamakBul(girilenSayi);
+
+document.write("Girdiðiniz sayi " + sayiBasamak +" basamaklýdýr...");
+
+</script>

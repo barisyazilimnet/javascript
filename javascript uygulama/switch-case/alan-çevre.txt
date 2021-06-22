@@ -1,0 +1,179 @@
+<head>
+
+<script type ="text/javascript">
+
+
+var pi=3.14;
+	
+var sekil=prompt("Ýþlem yapmak istediðiniz þekli giriniz [kare- dikdörtgen-üçgen-daire] :");
+
+switch(sekil)
+{
+	
+	case "kare" :
+	{
+		var islem=prompt("Yapacaðýnýz iþlemi giriniz [alan-çevre]:");
+
+		switch(islem)
+		{
+			case "alan" :
+			{
+
+			var kareKenar=prompt("Karenin bir kenar uzunluðunu giriniz:");
+
+			document.write("Karenin alaný: " + (eval(kareKenar)*eval(kareKenar)) + " cm²");
+
+			}
+			break;
+			
+			case "çevre" :
+			{
+			
+			var kareKenar=prompt("Karenin bir kenar uzunluðunu giriniz:");
+
+			document.write("Karenin çevresi: " + (4*eval(kareKenar)) + " cm");
+
+			}
+			break;
+			
+			default:
+
+			document.write("Yanlýþ iþlem girdiniz!");
+
+			break;
+		}
+	}
+	break;
+
+	case "dikdörtgen" :
+	{
+		var islem=prompt("Yapacaðýnýz iþlemi giriniz [alan-çevre]:");
+
+	
+		switch(islem)
+		{
+			case "alan" :
+			{
+
+			var uzunKenar=prompt("Dikdörtgenin uzun kenarýný giriniz:");
+
+			var kisaKenar=prompt("Dikdörtgenin kýsa kenarýný giriniz:");
+
+			document.write("Dikdörtgenin alaný: " + (eval(kisaKenar)*eval(uzunKenar)) + " cm²");
+
+			}
+
+			break;
+			
+			case "çevre" :
+			{
+
+			var uzunKenar=prompt("Dikdörtgenin uzun kenarýný giriniz:");
+
+			var kisaKenar=prompt("Dikdörtgenin kýsa kenarýný giriniz:");
+
+			document.write("Dikdörtgenin çevresi: " + (2*(eval(kisaKenar)+eval(uzunKenar))) + " cm");
+
+			}
+			break;
+
+			default:
+
+			document.write("Yanlýþ iþlem girdiniz!");
+
+			break;
+		}
+	}
+
+	break;
+
+	case "üçgen" :
+
+	{	
+		var islem=prompt("Yapacaðýnýz iþlemi giriniz [alan-çevre]:");
+
+		switch(islem)
+
+		{
+			case "alan" :
+			{
+
+			var taban=prompt("Üçgenin taban kenarýný giriniz:");
+
+			var yukseklik=prompt("Üçgenin yüksekliðini giriniz:");
+			
+			document.write("Üçgenin alaný: " + ((eval(taban)*eval(yukseklik))/2) + " cm²");
+
+			}
+
+			break;
+			
+			case "çevre" :
+			{
+
+			var kenar1=prompt("Üçgenin 1. kenarýný giriniz:");
+
+			var kenar2=prompt("Üçgenin 2. kenarýný giriniz:");
+			
+			var taban=prompt("Üçgenin taban kenarýný giriniz:");
+			
+			document.write("Üçgenin çevresi: " + (eval(taban) + eval(kenar1) + eval(kenar2)) + " cm");
+			}
+
+			break;
+			
+			default:
+
+			document.write("Yanlýþ iþlem girdiniz!");
+
+			break;
+		}
+	}
+
+	break;
+
+	case "daire" :
+	{
+		var islem=prompt("Yapacaðýnýz iþlemi giriniz [alan-çevre]:");
+
+		switch(islem)
+		{
+			case "alan" :
+			{
+			
+			var yaricap=prompt("Dairenin yarýçapýný giriniz:");
+
+			document.write("Dairenin alaný: " + (pi*eval(yaricap)*eval(yaricap)) + " cm²");
+			
+			}
+			break;
+			
+			case "çevre" :
+			{
+			
+			var yaricap=prompt("Dairenin yarýçapýný giriniz:");
+
+			document.write("Dairenin çevresi: " + (2*pi*eval(yaricap)) + " cm");
+			
+			}
+			break;
+
+			default:
+
+			document.write("Yanlýþ iþlem girdiniz!");
+
+			break;
+		}
+	}
+
+	break;
+
+	default:
+
+	document.write("Yanlýþ þekil girdiniz!");
+
+	break;
+}
+
+</script>
+</head>

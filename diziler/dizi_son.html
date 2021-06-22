@@ -1,0 +1,27 @@
+<h1>
+
+<script type ="text/javascript">
+var dizi= new Array();
+var i=0;
+var eleman;
+ 
+while(eleman!="dizi_son")
+{
+	eleman=prompt(eval(i+1)+". elemaný giriniz: ");
+	
+	if(eleman!="dizi_son")
+	{
+		dizi[i]=eleman;
+	}
+	
+	i++;
+}
+var elemanSay=dizi.length;
+
+for(i=0;i<=(elemanSay-1);i++)
+{
+alert("Dizinin "+eval(i+1)+".elemaný: "+dizi[i]); 
+}
+	
+</script>
+</h1>

@@ -1,0 +1,67 @@
+<head>
+
+<script type ="text/javascript">
+
+	
+var sayi=prompt("1-12 arasý sayý giriniz:");
+
+	
+switch(sayi)
+{
+	case "1":
+	document.write("1. ay Ocak ayýdýr");
+	break;
+
+	case "2":
+	document.write("2. ay Þubat ayýdýr");
+	break;
+
+	case "3":
+	document.write("3. ay Mart ayýdýr");
+	break;
+
+	case "4":
+	document.write("4. ay Nisan ayýdýr");
+	break;
+
+	case "5":
+	document.write("5. ay Mayýs ayýdýr");
+	break;
+
+	case "6":
+	document.write("6. ay Haziran ayýdýr");
+	break;
+
+	case "7":
+	document.write("7. ay Temmuz ayýdýr");
+	break;
+
+	case "8":
+	document.write("8. ay Aðustos ayýdýr");
+	break;
+
+	case "9":
+	document.write("9. ay Eylül ayýdýr");
+	break;
+
+	case "10":
+	document.write("10. ay Ekim ayýdýr");
+	break;
+
+	case "11":
+	document.write("11. ay Kasým ayýdýr");
+	break;
+
+	case "12":
+	document.write("12. ay Aralýk ayýdýr");
+	break;
+
+	default:
+	document.write("Yanlýþ deðer girdiniz!");
+	break;
+}
+	
+
+	
+</script>
+</head>

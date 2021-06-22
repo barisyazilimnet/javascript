@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>--</title>
+</head>
+<body>
+<script>
+var sekil=prompt("sekil giriniz(kare-dikdörtgen-üçgen");
+
+switch(sekil)
+{
+	case "kare":
+	{
+		var islem=prompt("bir islem giriniz(alan-çevre)");
+		switch(islem)
+		{
+       			case "alan":
+			{
+       				var  kenar=prompt("bir kenar giriniz");
+         			document.write(eval(kenar)*eval(kenar));
+			}
+       			break;
+
+       			case "çevre":
+			{	
+       				var  kenar=prompt("bir kenar giriniz");
+         			document.write(4*eval(kenar));
+        		}
+        		 break; 
+
+         		default:
+ 				document.write("yanlis girdiniz");
+			break;
+		}
+	}
+	break;
+
+}
+</script>
+</body>
+</html>

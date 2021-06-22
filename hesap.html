@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Başlıksız Belge</title>
+</head>
+
+<body>
+<script>
+function hesap(s1,op,s2)
+{
+	if(op.value=="+")
+	{
+		alert(eval(s1.value)+eval(s2.value));
+	}
+	else if(op.value=="-")
+	{
+		alert(eval(s1.value)-eval(s2.value));
+	}
+	else if(op.value=="*")
+	{
+		alert(eval(s1.value)*eval(s2.value));
+	}
+	else if(op.value=="/")
+	{
+		alert(eval(s1.value)/eval(s2.value));
+	}
+	else 
+	{
+		alert("Hatalı operatör girdiniz!");
+	}
+}
+</script>
+<form name="form1">
+<input type="text" name="sayi1"/>
+<input type="text" name="operator"/>
+<input type="text" name="sayi2"/>
+<input type="button" value="Hesapla" 
+onclick="hesap(document.form1.sayi1,document.form1.operator,document.form1.sayi2)"/>
+</form>
+</body>
+</html>
